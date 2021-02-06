@@ -1,0 +1,364 @@
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select,
+textarea {
+  margin: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+td:not([align]),
+th:not([align]) {
+  text-align: left;
+}
+
+html {
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+}
+
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+section {
+  display: block;
+}
+
+code,
+pre {
+  font-family: monospace;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: auto;
+}
+
+body {
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+/*start*/
+
+body{
+	margin: 0;
+	overflow: hidden;
+}
+
+/*PaTI image*/
+
+.background{
+	width: 100%;
+	position: absolute;
+	top: -15px;
+}
+
+.object img{
+  position : absolute;
+  width: 10%;
+  margin: 10px;
+  filter: drop-shadow(5px 5px 5px #000);
+}
+
+
+#cherry{
+  top: 10px;
+  left: 8%;
+}
+
+#cactus{
+  top: 160px;
+  left: 8%;
+}
+#orange{
+  top: 310px;
+  left: 8%;
+}
+#apple{
+  top: 460px;
+  left: 8%;
+}
+#mushroom{
+  top: 610px;
+  left: 8%;
+}
+#pot{
+  top: 10px;
+  left: 78%;
+}
+
+#socks{
+  top: 160px;
+  left: 78%;
+}
+
+#pizza{
+  top: 310px;
+  left: 78%;
+}
+
+#jam{
+  top: 460px;
+  left: 78%;
+}
+
+#coffee{
+  top: 610px;
+  left: 78%;
+}
+
+/*pop-up*/
+
+.iam{
+	position: relative;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 40px;
+	text-align: center;
+	padding-top: 100px;
+}
+
+.q{
+	position: relative;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 20px;
+	padding: 5%;
+	word-break: keep-all;
+	overflow: scroll;
+}
+
+#image_q{
+	left: 44%;
+	animation-name: haha;
+  	-webkit-animation-name: haha;
+  	animation-duration: 8s;
+  	-webkit-animation-iteration-count: infinite;
+  	animation-iteration-count: infinite;
+}
+
+@keyframes haha {
+  from {top: 5%;}
+  to { top: 78%;}
+}
+
+@-webkit-keyframes haha {
+  from {top: 5%;}
+  to { top: 78%;}
+ }
+
+ .formobile{
+display: none;
+}
+
+@media screen and (max-width: 700px){
+
+.background{
+  width: 150%;
+  position: absolute;
+  top: 15%;
+  left: -27%;
+}
+
+.object img{
+  position : absolute;
+  width: 18%;
+  margin: 10px;
+  filter: drop-shadow(5px 5px 5px #000);
+}
+
+#cherry{
+  top: 10px;
+  left: 2%;
+}
+
+#cactus{
+  top: 10px;
+  left: 20%;
+}
+#orange{
+  top: 10px;
+  left: 38%;
+}
+#apple{
+  top: 10px;
+  left: 58%;
+}
+#mushroom{
+  top: 10px;
+  left: 78%;
+}
+#pot{
+  top: 610px;
+  left: 2%;
+}
+
+#socks{
+  top: 610px;
+  left: 20%;
+}
+
+#pizza{
+  top: 610px;
+  left: 38%;
+}
+
+#jam{
+  top: 610px;
+  left: 58%;
+}
+
+#coffee{
+  top: 610px;
+  left: 78%;
+}
+
+.iam{
+  position: relative;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.q{
+  position: relative;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 20px;
+  padding: 5%;
+  word-break: keep-all;
+  overflow: scroll;
+}
+
+#image_q{
+  top: 44%;
+  animation-name: haha;
+    -webkit-animation-name: haha;
+    animation-duration: 8s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+@keyframes haha {
+  from {left: 4%;}
+  to { left: 78%;}
+}
+
+@-webkit-keyframes haha {
+  from {left: 4%;}
+  to { left: 78%;}
+ }
+
+
+}
+/*.formobile{
+display: block;
+z-index: 10000;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+overflow: hidden;
+}
+
+.formobile-p{
+display: block;
+z-index: 10001;
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+margin: 0;
+padding: 0;
+font-family: sans-serif;
+font-size: 15px;
+font-weight: normal;
+line-height: 1.4;
+color: black;
+background-color: white;
+-webkit-box-sizing: inherit;
+box-sizing: inherit;
+text-decoration: none;
+overflow: hidden;
+text-align: center;
+}
+}*/
+
